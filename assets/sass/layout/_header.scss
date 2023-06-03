@@ -1,0 +1,20 @@
+header {
+    display: flex;
+    height: 63px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content: center;
+    position:relative;
+    z-index:2;
+
+
+    a img {
+        padding-top: 18px;
+    width: 162px;
+    height: auto;
+    }
+
+    a .fa-arrow-left {
+        scale: 2;
+    }
+}

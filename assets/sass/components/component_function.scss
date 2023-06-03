@@ -1,0 +1,80 @@
+// Card Fonctionnement
+
+.function {
+    background-color: white;
+    height: 440px;
+
+    h1 {
+        padding-top: 48px;
+        margin-bottom: 26px;
+        margin-left: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .flex-function {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .function-1 {
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 322px;
+            z-index: 2;
+        
+            .function-1-p {
+                position: absolute;
+                top: 26.5px;
+                left: -12px;
+                font-size: 14px;
+                height: 24px;
+                width: 24px;
+                background: #9356DC;
+                border: 0.5px;
+                border-radius: 50%;
+        
+                p {
+                    position: absolute;
+                    top: 5px;
+                    left: 8px;
+                    color: white;
+                    text-align: center;
+                }
+            }
+        
+            .function-1-text {
+                z-index: -1;
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                background: #F7F7F7;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                border-radius: 20px;
+                width: 322px;
+                height: 72px;
+                margin-bottom: 25px;
+        
+                .function-icon-gray {
+                    color: gray;
+                    position: absolute;
+                    top: 27.5px;
+                    left: 33.5px;
+                }
+        
+                .function-store {
+                    color: #9356DC;
+                    position: absolute;
+                    top: 27.5px;
+                    left: 33.5px;
+                }
+            }
+        }
+    }
+}
+
+

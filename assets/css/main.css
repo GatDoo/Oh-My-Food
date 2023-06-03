@@ -263,9 +263,64 @@ footer div .footer-text2 {
   font-size: 18px;
   padding-bottom: 5px;
 }
+.flex-cards div .checkbox-hidden {
+  display: none;
+}
 .flex-cards div .fa-heart {
   padding-right: 20px;
   scale: 1.7;
+}
+.flex-cards div #button1:checked ~ .heart-before1 {
+  display: none;
+}
+.flex-cards div #button1:checked ~ .heart-after1 {
+  display: inline-block;
+  color: #e10e0e;
+}
+.flex-cards div #button1:not(:checked) ~ .heart-before1 {
+  display: inline-block;
+}
+.flex-cards div #button1:not(:checked) ~ .heart-after1 {
+  display: none;
+}
+.flex-cards div #button2:checked ~ .heart-before2 {
+  display: none;
+}
+.flex-cards div #button2:checked ~ .heart-after2 {
+  display: inline-block;
+  color: #e10e0e;
+}
+.flex-cards div #button2:not(:checked) ~ .heart-before2 {
+  display: inline-block;
+}
+.flex-cards div #button2:not(:checked) ~ .heart-after2 {
+  display: none;
+}
+.flex-cards div #button3:checked ~ .heart-before3 {
+  display: none;
+}
+.flex-cards div #button3:checked ~ .heart-after3 {
+  display: inline-block;
+  color: #e10e0e;
+}
+.flex-cards div #button3:not(:checked) ~ .heart-before3 {
+  display: inline-block;
+}
+.flex-cards div #button3:not(:checked) ~ .heart-after3 {
+  display: none;
+}
+.flex-cards div #button4:checked ~ .heart-before4 {
+  display: none;
+}
+.flex-cards div #button4:checked ~ .heart-after4 {
+  display: inline-block;
+  color: #e10e0e;
+}
+.flex-cards div #button4:not(:checked) ~ .heart-before4 {
+  display: inline-block;
+}
+.flex-cards div #button4:not(:checked) ~ .heart-after4 {
+  display: none;
 }
 .flex-cards .new {
   position: absolute;

@@ -78,7 +78,8 @@ header a img {
   height: auto;
 }
 header a .fa-arrow-left {
-  scale: 2;
+  -webkit-transform: scale(2);
+          transform: scale(2);
 }
 
 footer {
@@ -217,7 +218,11 @@ footer div .footer-text2 {
   left: 33.5px;
 }
 
-.flex-cards {
+.flex-order .resto-card {
+  width: 90%;
+  position: relative;
+}
+.flex-order .resto-card .flex-cards {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -227,21 +232,21 @@ footer div .footer-text2 {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 251px;
-  width: 90%;
+  width: 100%;
   background: #FFFFFF;
   -webkit-box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   margin-bottom: 20px;
 }
-.flex-cards img {
+.flex-order .resto-card .flex-cards img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 70%;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
-.flex-cards .resto-flex {
+.flex-order .resto-card .flex-cards .resto-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,71 +263,12 @@ footer div .footer-text2 {
       -ms-flex-align: center;
           align-items: center;
 }
-.flex-cards .resto-flex .card-title h3 {
+.flex-order .resto-card .flex-cards .resto-flex .card-title h3 {
   font-weight: bold;
   font-size: 18px;
   padding-bottom: 5px;
 }
-.flex-cards .resto-flex .checkbox-hidden {
-  display: none;
-}
-.flex-cards .resto-flex .fa-heart {
-  padding-right: 20px;
-  scale: 1.7;
-}
-.flex-cards .resto-flex #button1:checked ~ .heart-before1 {
-  display: none;
-}
-.flex-cards .resto-flex #button1:checked ~ .heart-after1 {
-  display: inline-block;
-  color: #e10e0e;
-}
-.flex-cards .resto-flex #button1:not(:checked) ~ .heart-before1 {
-  display: inline-block;
-}
-.flex-cards .resto-flex #button1:not(:checked) ~ .heart-after1 {
-  display: none;
-}
-.flex-cards .resto-flex #button2:checked ~ .heart-before2 {
-  display: none;
-}
-.flex-cards .resto-flex #button2:checked ~ .heart-after2 {
-  display: inline-block;
-  color: #e10e0e;
-}
-.flex-cards .resto-flex #button2:not(:checked) ~ .heart-before2 {
-  display: inline-block;
-}
-.flex-cards .resto-flex #button2:not(:checked) ~ .heart-after2 {
-  display: none;
-}
-.flex-cards .resto-flex #button3:checked ~ .heart-before3 {
-  display: none;
-}
-.flex-cards .resto-flex #button3:checked ~ .heart-after3 {
-  display: inline-block;
-  color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-}
-.flex-cards .resto-flex #button3:not(:checked) ~ .heart-before3 {
-  display: inline-block;
-}
-.flex-cards .resto-flex #button3:not(:checked) ~ .heart-after3 {
-  display: none;
-}
-.flex-cards .resto-flex #button4:checked ~ .heart-before4 {
-  display: none;
-}
-.flex-cards .resto-flex #button4:checked ~ .heart-after4 {
-  display: inline-block;
-  color: #e10e0e;
-}
-.flex-cards .resto-flex #button4:not(:checked) ~ .heart-before4 {
-  display: inline-block;
-}
-.flex-cards .resto-flex #button4:not(:checked) ~ .heart-after4 {
-  display: none;
-}
-.flex-cards .new {
+.flex-order .resto-card .flex-cards .new {
   position: absolute;
   border: 0.1px;
   padding: 7px 9px;
@@ -333,6 +279,84 @@ footer div .footer-text2 {
   -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   border-radius: 2px;
+}
+.flex-order .resto-card .checkbox-hidden {
+  display: none;
+}
+.flex-order .resto-card .fa-heart {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  position: absolute;
+  bottom: 53px;
+  right: 20px;
+}
+.flex-order .resto-card #button1:checked ~ .heart-before1 {
+  display: none;
+}
+.flex-order .resto-card #button1:checked ~ .heart-after1 {
+  display: inline-block;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.flex-order .resto-card #button1:not(:checked) ~ .heart-before1 {
+  display: inline-block;
+}
+.flex-order .resto-card #button1:not(:checked) ~ .heart-after1 {
+  display: none;
+}
+.flex-order .resto-card #button2:checked ~ .heart-before2 {
+  display: none;
+}
+.flex-order .resto-card #button2:checked ~ .heart-after2 {
+  display: inline-block;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.flex-order .resto-card #button2:not(:checked) ~ .heart-before2 {
+  display: inline-block;
+}
+.flex-order .resto-card #button2:not(:checked) ~ .heart-after2 {
+  display: none;
+}
+.flex-order .resto-card #button3:checked ~ .heart-before3 {
+  display: none;
+}
+.flex-order .resto-card #button3:checked ~ .heart-after3 {
+  display: inline-block;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.flex-order .resto-card #button3:not(:checked) ~ .heart-before3 {
+  display: inline-block;
+}
+.flex-order .resto-card #button3:not(:checked) ~ .heart-after3 {
+  display: none;
+}
+.flex-order .resto-card #button4:checked ~ .heart-before4 {
+  display: none;
+}
+.flex-order .resto-card #button4:checked ~ .heart-after4 {
+  display: inline-block;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.flex-order .resto-card #button4:not(:checked) ~ .heart-before4 {
+  display: inline-block;
+}
+.flex-order .resto-card #button4:not(:checked) ~ .heart-after4 {
+  display: none;
 }
 
 main {

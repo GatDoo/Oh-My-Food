@@ -241,7 +241,7 @@ footer div .footer-text2 {
   width: 100%;
   border-radius: 15px 15px 0px 0px;
 }
-.flex-cards div {
+.flex-cards .resto-flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -258,68 +258,68 @@ footer div .footer-text2 {
       -ms-flex-align: center;
           align-items: center;
 }
-.flex-cards div span h3 {
+.flex-cards .resto-flex .card-title h3 {
   font-weight: bold;
   font-size: 18px;
   padding-bottom: 5px;
 }
-.flex-cards div .checkbox-hidden {
+.flex-cards .resto-flex .checkbox-hidden {
   display: none;
 }
-.flex-cards div .fa-heart {
+.flex-cards .resto-flex .fa-heart {
   padding-right: 20px;
   scale: 1.7;
 }
-.flex-cards div #button1:checked ~ .heart-before1 {
+.flex-cards .resto-flex #button1:checked ~ .heart-before1 {
   display: none;
 }
-.flex-cards div #button1:checked ~ .heart-after1 {
+.flex-cards .resto-flex #button1:checked ~ .heart-after1 {
   display: inline-block;
   color: #e10e0e;
 }
-.flex-cards div #button1:not(:checked) ~ .heart-before1 {
+.flex-cards .resto-flex #button1:not(:checked) ~ .heart-before1 {
   display: inline-block;
 }
-.flex-cards div #button1:not(:checked) ~ .heart-after1 {
+.flex-cards .resto-flex #button1:not(:checked) ~ .heart-after1 {
   display: none;
 }
-.flex-cards div #button2:checked ~ .heart-before2 {
+.flex-cards .resto-flex #button2:checked ~ .heart-before2 {
   display: none;
 }
-.flex-cards div #button2:checked ~ .heart-after2 {
+.flex-cards .resto-flex #button2:checked ~ .heart-after2 {
   display: inline-block;
   color: #e10e0e;
 }
-.flex-cards div #button2:not(:checked) ~ .heart-before2 {
+.flex-cards .resto-flex #button2:not(:checked) ~ .heart-before2 {
   display: inline-block;
 }
-.flex-cards div #button2:not(:checked) ~ .heart-after2 {
+.flex-cards .resto-flex #button2:not(:checked) ~ .heart-after2 {
   display: none;
 }
-.flex-cards div #button3:checked ~ .heart-before3 {
+.flex-cards .resto-flex #button3:checked ~ .heart-before3 {
   display: none;
 }
-.flex-cards div #button3:checked ~ .heart-after3 {
+.flex-cards .resto-flex #button3:checked ~ .heart-after3 {
+  display: inline-block;
+  color: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+.flex-cards .resto-flex #button3:not(:checked) ~ .heart-before3 {
+  display: inline-block;
+}
+.flex-cards .resto-flex #button3:not(:checked) ~ .heart-after3 {
+  display: none;
+}
+.flex-cards .resto-flex #button4:checked ~ .heart-before4 {
+  display: none;
+}
+.flex-cards .resto-flex #button4:checked ~ .heart-after4 {
   display: inline-block;
   color: #e10e0e;
 }
-.flex-cards div #button3:not(:checked) ~ .heart-before3 {
+.flex-cards .resto-flex #button4:not(:checked) ~ .heart-before4 {
   display: inline-block;
 }
-.flex-cards div #button3:not(:checked) ~ .heart-after3 {
-  display: none;
-}
-.flex-cards div #button4:checked ~ .heart-before4 {
-  display: none;
-}
-.flex-cards div #button4:checked ~ .heart-after4 {
-  display: inline-block;
-  color: #e10e0e;
-}
-.flex-cards div #button4:not(:checked) ~ .heart-before4 {
-  display: inline-block;
-}
-.flex-cards div #button4:not(:checked) ~ .heart-after4 {
+.flex-cards .resto-flex #button4:not(:checked) ~ .heart-after4 {
   display: none;
 }
 .flex-cards .new {

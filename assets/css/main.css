@@ -289,6 +289,17 @@ footer div .footer-text2 {
   position: absolute;
   bottom: 53px;
   right: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.flex-order .resto-card .fa-heart:hover {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .flex-order .resto-card #button1:checked ~ .heart-before1 {
   display: none;

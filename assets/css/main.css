@@ -102,6 +102,31 @@ footer {
   gap: 16px;
   background-color: #353535;
 }
+@media screen and (min-width: 1200px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    height: 60px;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    padding-bottom: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 20px;
+  }
+}
 footer div .footer-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,17 +153,37 @@ footer div .footer-text2 {
   padding-top: 7px;
   color: white;
 }
+@media screen and (min-width: 1200px) {
+  footer div .footer-text2 {
+    margin-right: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer div .footer-resp {
+    margin-right: 40px;
+  }
+}
 
 .function {
   background-color: white;
   height: 440px;
 }
+@media screen and (min-width: 1200px) {
+  .function {
+    height: 228px;
+  }
+}
 .function h1 {
   padding-top: 48px;
   margin-bottom: 26px;
-  margin-left: 20px;
+  margin-left: 4%;
   font-size: 24px;
   font-weight: bold;
+}
+@media screen and (min-width: 1200px) {
+  .function h1 {
+    margin-left: 5%;
+  }
 }
 .function .flex-function {
   display: -webkit-box;
@@ -151,6 +196,18 @@ footer div .footer-text2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .function .flex-function {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 50px;
+  }
 }
 .function .flex-function .function-1 {
   position: relative;
@@ -226,6 +283,11 @@ footer div .footer-text2 {
   width: 90%;
   position: relative;
 }
+@media screen and (min-width: 1200px) {
+  .flex-order .resto-card {
+    width: 500px;
+  }
+}
 .flex-order .resto-card .flex-cards {
   position: relative;
   display: -webkit-box;
@@ -243,12 +305,22 @@ footer div .footer-text2 {
   border-radius: 15px;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .flex-order .resto-card .flex-cards {
+    height: 350px;
+  }
+}
 .flex-order .resto-card .flex-cards img {
   -o-object-fit: cover;
      object-fit: cover;
   height: 70%;
   width: 100%;
   border-radius: 15px 15px 0px 0px;
+}
+@media screen and (min-width: 1200px) {
+  .flex-order .resto-card .flex-cards img {
+    height: 80%;
+  }
 }
 .flex-order .resto-card .flex-cards .resto-flex {
   display: -webkit-box;
@@ -606,6 +678,12 @@ main {
   height: 68px;
   font-weight: bold;
 }
+@media screen and (min-width: 1200px) {
+  .flex .booking h2 {
+    font-weight: 700;
+    font-size: 40px;
+  }
+}
 .flex .booking .booking-p {
   margin: 0px 20px 27px;
   text-align: center;
@@ -635,6 +713,11 @@ main {
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
+@media screen and (min-width: 1200px) {
+  .flex .booking a {
+    margin-bottom: 30px;
+  }
+}
 .flex .booking a p {
   color: white;
   -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
@@ -654,6 +737,11 @@ main {
   padding-left: 4%;
   padding-bottom: 24px;
 }
+@media screen and (min-width: 1200px) {
+  .restaurants h2 {
+    padding-left: 5%;
+  }
+}
 .restaurants .flex-order {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -665,6 +753,26 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .restaurants .flex-order {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 main {

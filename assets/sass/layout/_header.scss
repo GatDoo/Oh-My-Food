@@ -1,4 +1,5 @@
 header {
+    position: relative;
     display: flex;
     height: 63px;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
@@ -14,7 +15,10 @@ header {
     height: auto;
     }
 
-    a .fa-arrow-left {
-        transform: scale(2);
+    a i {
+        transform: scale(1.5);
+        position: absolute;
+        top: 25px;
+        left: 40px;
     }
 }

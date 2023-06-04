@@ -1,0 +1,27 @@
+.menu-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 90%;
+  height: 69px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+}
+.menu-card .name-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}

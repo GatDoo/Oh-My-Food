@@ -1,0 +1,79 @@
+.menu {
+    position: relative;
+    background: #F7F7F7;
+    border-radius: 40px 40px 0px 0px;
+    position: absolute;
+    top: 220px;
+    width: 100%;
+
+    .title-menu {
+        font-family: 'Shrikhand';
+        font-style: italic;
+        font-size: 28px;
+        padding-top: 32px;
+        padding-left: 17px;
+    }
+
+    .like {
+        position: absolute;
+        top: 105px;
+        right: 18px;
+
+
+        .checkbox-hidden {
+            display: none;
+          }
+          
+          .fa-heart {
+            transform: scale(1.7);
+            position: absolute;
+            bottom: 53px;
+            right: 20px;
+            transition: 0.3s;
+          }
+        
+          .fa-heart:hover {
+            background: linear-gradient(193.33deg, $purple -11.44%, $pink 123.93%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+            transition: 0.3s;
+          }
+          
+          #button1:checked ~ .heart-before1 {
+            display: none;
+          }
+          
+          #button1:checked ~ .heart-after1 {
+            display: inline-block;
+            background: linear-gradient(193.33deg, $purple -11.44%, $pink 123.93%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            -moz-background-clip: text;
+            -moz-text-fill-color: transparent;
+          }
+          
+          #button1:not(:checked) ~ .heart-before1 {
+            display: inline-block;
+          }
+          
+          #button1:not(:checked) ~ .heart-after1 {
+            display: none;
+          }  
+    }
+
+    .starter {
+        text-transform: uppercase;
+        padding-left: 13px;
+        padding-top: 42px;
+    }
+
+    .border {
+        margin-left: 13px;
+        margin-top: 5px;
+        margin-bottom: 10px;
+        width: 40px;
+        border-bottom: 3px solid #99E2D0;
+    }
+}

@@ -59,6 +59,7 @@ a {
 }
 
 header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,9 +78,12 @@ header a img {
   width: 162px;
   height: auto;
 }
-header a .fa-arrow-left {
-  -webkit-transform: scale(2);
-          transform: scale(2);
+header a i {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  position: absolute;
+  top: 25px;
+  left: 40px;
 }
 
 footer {
@@ -370,6 +374,153 @@ footer div .footer-text2 {
   display: none;
 }
 
+.head-image {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.head-image img {
+  width: 100%;
+  height: 275px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu {
+  position: relative;
+  background: #F7F7F7;
+  border-radius: 40px 40px 0px 0px;
+  position: absolute;
+  top: 220px;
+  width: 100%;
+}
+.menu .title-menu {
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-size: 28px;
+  padding-top: 32px;
+  padding-left: 17px;
+}
+.menu .like {
+  position: absolute;
+  top: 105px;
+  right: 18px;
+}
+.menu .like .checkbox-hidden {
+  display: none;
+}
+.menu .like .fa-heart {
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  position: absolute;
+  bottom: 53px;
+  right: 20px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.menu .like .fa-heart:hover {
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.menu .like #button1:checked ~ .heart-before1 {
+  display: none;
+}
+.menu .like #button1:checked ~ .heart-after1 {
+  display: inline-block;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+.menu .like #button1:not(:checked) ~ .heart-before1 {
+  display: inline-block;
+}
+.menu .like #button1:not(:checked) ~ .heart-after1 {
+  display: none;
+}
+.menu .starter {
+  text-transform: uppercase;
+  padding-left: 13px;
+  padding-top: 42px;
+}
+.menu .border {
+  margin-left: 13px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  width: 40px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+.flex-menu-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.flex-menu-card .menu-card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+  height: 69px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  border-radius: 15.0431px;
+  margin-bottom: 12px;
+}
+.flex-menu-card .menu-card .name-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 6px;
+  padding-left: 15px;
+}
+.flex-menu-card .menu-card .name-flex .plate-name {
+  font-weight: bold;
+}
+.flex-menu-card .menu-card .name-flex .plate-description {
+  font-size: 15.0431px;
+}
+.flex-menu-card .menu-card .price {
+  position: absolute;
+  right: 16px;
+  bottom: 15px;
+  font-weight: 700;
+  font-size: 15.0431px;
+}
+
 main {
   background-color: #F7F7F7;
 }
@@ -481,4 +632,8 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+main {
+  position: relative;
 }

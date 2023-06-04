@@ -1,0 +1,43 @@
+.flex-menu-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .menu-card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    height: 69px;
+    background: #FFFFFF;
+    box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+    border-radius: 15.0431px;
+    margin-bottom: 12px;
+  
+    .name-flex {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 6px;
+      padding-left: 15px;
+  
+      .plate-name {
+        font-weight: bold;
+      }
+
+      .plate-description {
+        font-size: 15.0431px;
+      }
+    }
+  
+    .price {
+      position: absolute;
+      right: 16px;
+      bottom: 15px;
+      font-weight: 700;
+      font-size: 15.0431px;
+    }
+  }
+}

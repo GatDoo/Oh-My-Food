@@ -437,6 +437,8 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 .flex .booking a p {
   color: white;
@@ -444,6 +446,10 @@ main {
           transform: matrix(1, 0, 0, -1, 0, 0);
   padding-left: 18px;
   padding-right: 18px;
+}
+.flex .booking a:hover {
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
 }
 
 .restaurants h2 {

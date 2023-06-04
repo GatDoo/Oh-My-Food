@@ -457,6 +457,39 @@ footer div .footer-text2 {
   width: 40px;
   border-bottom: 3px solid #99E2D0;
 }
+.menu .button-command {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  width: 186px;
+  height: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.menu .button-command .command-text {
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
+  text-align: center;
+  color: white;
+}
+.menu .button-command:hover {
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+}
 
 .flex-menu-card {
   display: -webkit-box;
@@ -636,4 +669,10 @@ main {
 
 main {
   position: relative;
+}
+
+.footer-palette {
+  position: absolute;
+  bottom: -310px;
+  width: 100%;
 }

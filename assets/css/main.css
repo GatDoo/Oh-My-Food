@@ -98,7 +98,8 @@ footer {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 22px 25px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   gap: 16px;
   background-color: #353535;
 }
@@ -138,6 +139,12 @@ footer div .footer-text {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding-left: 25px;
+}
+@media screen and (min-width: 1200px) {
+  footer div .footer-text {
+    padding-left: 0;
+  }
 }
 footer div .footer-text p {
   padding-left: 16px;
@@ -152,15 +159,25 @@ footer div .footer-text i {
 footer div .footer-text2 {
   padding-top: 7px;
   color: white;
+  padding-left: 25px;
 }
 @media screen and (min-width: 1200px) {
   footer div .footer-text2 {
     margin-right: 20px;
+    padding-left: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   footer div .footer-resp {
     margin-right: 40px;
+  }
+}
+footer img {
+  padding-left: 25px;
+}
+@media screen and (min-width: 1200px) {
+  footer img {
+    padding-left: 0;
   }
 }
 
@@ -768,11 +785,15 @@ main {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 20px;
+    gap: 80px;
     padding-bottom: 20px;
     padding-left: 30px;
     padding-right: 30px;
   }
+}
+
+body {
+  width: 100%;
 }
 
 main {
@@ -781,6 +802,8 @@ main {
 
 .footer-palette {
   position: absolute;
-  bottom: -310px;
+  bottom: -250px;
+  left: 0;
+  right: 0;
   width: 100%;
 }

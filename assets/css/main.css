@@ -102,6 +102,7 @@ footer {
   padding-bottom: 22px;
   gap: 16px;
   background-color: #353535;
+  margin-top: auto;
 }
 @media screen and (min-width: 1200px) {
   footer {
@@ -643,11 +644,17 @@ footer img {
   font-size: 15.0431px;
 }
 
-main {
+html {
+  height: auto;
+}
+html body {
+  height: auto;
+}
+html body main {
+  height: auto;
   background-color: #F7F7F7;
 }
-
-.flex {
+html body .flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -656,7 +663,7 @@ main {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.flex div {
+html body .flex div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -670,10 +677,10 @@ main {
   height: 50px;
   width: 100%;
 }
-.flex div h1 {
+html body .flex div h1 {
   padding-left: 17px;
 }
-.flex .booking {
+html body .flex .booking {
   background: #F7F7F7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -686,7 +693,7 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.flex .booking h2 {
+html body .flex .booking h2 {
   padding-top: 39.5px;
   font-size: 24px;
   margin-left: 50px;
@@ -696,17 +703,17 @@ main {
   font-weight: bold;
 }
 @media screen and (min-width: 1200px) {
-  .flex .booking h2 {
+  html body .flex .booking h2 {
     font-weight: 700;
     font-size: 40px;
   }
 }
-.flex .booking .booking-p {
+html body .flex .booking .booking-p {
   margin: 0px 20px 27px;
   text-align: center;
   font-size: 18px;
 }
-.flex .booking a {
+html body .flex .booking a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -731,23 +738,22 @@ main {
   transition: 0.3s;
 }
 @media screen and (min-width: 1200px) {
-  .flex .booking a {
+  html body .flex .booking a {
     margin-bottom: 30px;
   }
 }
-.flex .booking a p {
+html body .flex .booking a p {
   color: white;
   -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
           transform: matrix(1, 0, 0, -1, 0, 0);
   padding-left: 18px;
   padding-right: 18px;
 }
-.flex .booking a:hover {
+html body .flex .booking a:hover {
   -webkit-filter: brightness(130%);
           filter: brightness(130%);
 }
-
-.restaurants h2 {
+html body .restaurants h2 {
   font-weight: bold;
   font-size: 24px;
   padding-top: 54px;
@@ -755,11 +761,11 @@ main {
   padding-bottom: 24px;
 }
 @media screen and (min-width: 1200px) {
-  .restaurants h2 {
+  html body .restaurants h2 {
     padding-left: 5%;
   }
 }
-.restaurants .flex-order {
+html body .restaurants .flex-order {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,7 +778,7 @@ main {
           align-items: center;
 }
 @media screen and (min-width: 1200px) {
-  .restaurants .flex-order {
+  html body .restaurants .flex-order {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -792,18 +798,18 @@ main {
   }
 }
 
-body {
-  width: 100%;
+html {
+  height: auto;
 }
-
-main {
+html body {
+  width: 100%;
+  height: auto;
+}
+html body main {
   position: relative;
+  height: auto;
 }
-
-.footer-palette {
-  position: absolute;
-  bottom: -250px;
-  left: 0;
-  right: 0;
+html body .footer-palette {
   width: 100%;
+  margin-top: auto;
 }

@@ -1,113 +1,122 @@
-main {
-	background-color: $gray;
-}
+html {
+    height: auto;
 
-.flex {
-    display: flex;
-    flex-direction: column;
+    body {
+        height: auto;
 
-    div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $dark-gray;
-        height: 50px;
-        width: 100%;
-
-        h1 {
-            padding-left: 17px;
+        main {
+            height: auto;
+            background-color: $gray;
         }
-    }
-
-    .booking {
-        background: $gray;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        h2 {
-            padding-top: 39.5px;
-            font-size: 24px;
-            margin-left: 50px;
-            margin-right: 50px;
-            text-align: center;
-            height: 68px;
+        
+        .flex {
+            display: flex;
+            flex-direction: column;
+        
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: $dark-gray;
+                height: 50px;
+                width: 100%;
+        
+                h1 {
+                    padding-left: 17px;
+                }
+            }
+        
+            .booking {
+                background: $gray;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+                h2 {
+                    padding-top: 39.5px;
+                    font-size: 24px;
+                    margin-left: 50px;
+                    margin-right: 50px;
+                    text-align: center;
+                    height: 68px;
+                    font-weight: bold;
+        
+                    @media screen and (min-width: 1200px) {
+                        font-weight: 700;
+                        font-size: 40px;
+                    }
+                }
+        
+                .booking-p {
+                    margin: 0px 20px 27px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+        
+                a {
+                    display: flex;
+                    align-items: center;
+                    text-align: center;
+                    background: linear-gradient(193.33deg, $purple -11.44%, $pink 123.93%);
+                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+                    border-radius: 25px;
+                    transform: matrix(1, 0, 0, -1, 0, 0);
+                    margin-bottom: 55px;
+                    text-decoration: none;
+                    height: 50px;
+                    width: 218px;
+                    justify-content: center;
+                    transition: 0.3s;
+        
+                    @media screen and (min-width: 1200px) {
+                         margin-bottom: 30px;
+                    }
+        
+                    p {
+                        color: white;
+                        transform: matrix(1, 0, 0, -1, 0, 0);
+                        padding-left: 18px;
+                        padding-right: 18px;
+                    }
+                }
+        
+                a:hover {
+                    filter: brightness(130%);
+                }
+            }
+        }
+        
+        .restaurants {
+            
+        
+            h2 {
             font-weight: bold;
-
+            font-size: 24px;
+            padding-top: 54px;
+            padding-left: 4%;
+            padding-bottom: 24px;
+        
             @media screen and (min-width: 1200px) {
-                font-weight: 700;
-                font-size: 40px;
+                padding-left: 5%;
+            }
+            }
+        
+            .flex-order {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+        
+                @media screen and (min-width: 1200px) {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 80px;
+                    padding-bottom: 20px;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                  }
             }
         }
-
-        .booking-p {
-            margin: 0px 20px 27px;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        a {
-            display: flex;
-            align-items: center;
-            text-align: center;
-            background: linear-gradient(193.33deg, $purple -11.44%, $pink 123.93%);
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-            border-radius: 25px;
-            transform: matrix(1, 0, 0, -1, 0, 0);
-            margin-bottom: 55px;
-            text-decoration: none;
-            height: 50px;
-            width: 218px;
-            justify-content: center;
-            transition: 0.3s;
-
-            @media screen and (min-width: 1200px) {
-                 margin-bottom: 30px;
-            }
-
-            p {
-                color: white;
-                transform: matrix(1, 0, 0, -1, 0, 0);
-                padding-left: 18px;
-                padding-right: 18px;
-            }
-        }
-
-        a:hover {
-            filter: brightness(130%);
-        }
-    }
-}
-
-.restaurants {
-    
-
-    h2 {
-    font-weight: bold;
-    font-size: 24px;
-    padding-top: 54px;
-    padding-left: 4%;
-    padding-bottom: 24px;
-
-    @media screen and (min-width: 1200px) {
-        padding-left: 5%;
-    }
-    }
-
-    .flex-order {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        @media screen and (min-width: 1200px) {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 80px;
-            padding-bottom: 20px;
-            padding-left: 30px;
-            padding-right: 30px;
-          }
     }
 }

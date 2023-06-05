@@ -1,15 +1,19 @@
-body {
-    width: 100%;
-}
+html {
+    height: auto;
 
-main {
-    position: relative;
-}
+    body {
+        width: 100%;
+        height: auto;
 
-.footer-palette {
-    position: absolute;
-    bottom: -250px;
-    left: 0;
-    right: 0;
-    width: 100%;
+        main {
+            position: relative;
+            height: auto;
+        }
+
+        .footer-palette {
+            width: 100%;
+            margin-top: auto;
+        }
+    }
+    
 }

@@ -14,6 +14,10 @@
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
     margin-bottom: 12px;
+
+    @media screen and (min-width: 1200px) {
+      width: 60%;
+    }
   
     .name-flex {
       display: flex;

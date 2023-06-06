@@ -5,18 +5,32 @@
     bottom: 40px;
     width: 100%;
 
+    @media screen and (min-width: 1200px) {
+      width: 80%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
     .title-menu {
         font-family: 'Shrikhand';
         font-style: italic;
         font-size: 28px;
         padding-top: 32px;
         padding-left: 17px;
+
+        @media screen and (min-width: 1200px) {
+          text-align: center;
+        }
     }
 
     .like {
         position: absolute;
         top: 105px;
         right: 18px;
+
+        @media screen and (min-width: 1200px) {
+          right: 30%;
+        }
 
 
         .checkbox-hidden {
@@ -67,6 +81,10 @@
         text-transform: uppercase;
         padding-left: 13px;
         padding-top: 42px;
+
+        @media screen and (min-width: 1200px) {
+          padding-left: 20%;
+        }
     }
 
     .border {
@@ -75,6 +93,10 @@
         margin-bottom: 10px;
         width: 40px;
         border-bottom: 3px solid #99E2D0;
+
+        @media screen and (min-width: 1200px) {
+          margin-left: 20%;
+        }
     }
 
     .button-command {

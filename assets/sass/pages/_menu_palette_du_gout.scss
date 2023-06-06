@@ -8,6 +8,11 @@
         main {
             position: relative;
             height: 1352px;
+
+            @media screen and (min-width: 1200px) {
+                background-color: white;
+                height: 1477px;
+            }
         }
 
         .footer-palette {
@@ -15,5 +20,4 @@
             margin-top: auto;
         }
     }
-    
 }

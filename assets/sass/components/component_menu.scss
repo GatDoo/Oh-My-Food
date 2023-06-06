@@ -28,7 +28,7 @@
             position: absolute;
             bottom: 53px;
             right: 20px;
-            transition: 0.3s;
+            transition: all 0.3s ease;
           }
         
           .fa-heart:hover {
@@ -37,7 +37,8 @@
             -webkit-text-fill-color: transparent;
             -moz-background-clip: text;
             -moz-text-fill-color: transparent;
-            transition: 0.3s;
+            filter: brightness(130%);
+            transition: all 0.3s ease;
           }
           
           #button1:checked ~ .heart-before1 {

@@ -1,0 +1,42 @@
+.menu-card {
+  .icon-check {
+    position: absolute;
+    right: 12px;
+    top: 14px;
+    border-radius: 0px 10px 10px 0px;
+    transform: scale(1.7);
+    padding: 12px 9.5px 11.5px;
+    display: none;
+    color: white;
+    background: #99E2D0;
+  }
+}
+
+.menu-card:hover .icon-check {
+  display: inline-block;
+  width: auto;
+  animation: fadeinfromright 0.25s linear;
+  transform: scale(1.7);
+}
+
+.menu-card:hover .price {
+  right: 65px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-card:hover .name-flex {
+  transition: margin-right 0.5s ease;
+  margin-right: 100px;
+}
+
+@keyframes fadeinfromright {
+  0% {
+    transform: translateX(100%) scale(1.7);
+  }
+
+  100% {
+    transform: translateX(0%) scale(1.7);
+  }
+}

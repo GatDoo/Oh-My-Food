@@ -14,25 +14,35 @@
     box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
     border-radius: 15.0431px;
     margin-bottom: 12px;
+    overflow: hidden;
 
     @media screen and (min-width: 1200px) {
       width: 60%;
     }
   
     .name-flex {
+      position: relative;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
       gap: 6px;
       padding-left: 15px;
+      overflow: hidden;
   
       .plate-name {
         font-weight: bold;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
       }
 
       .plate-description {
         font-size: 15.0431px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
       }
     }
   
@@ -42,6 +52,7 @@
       bottom: 15px;
       font-weight: 700;
       font-size: 15.0431px;
+      transition: right 0.25s cubic-bezier(0.06, 0.47, 1, 1);
     }
   }
 }

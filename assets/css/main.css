@@ -24,7 +24,6 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
@@ -167,6 +166,9 @@ footer div .footer-text2 {
     margin-right: 20px;
     padding-left: 0;
   }
+}
+footer div .footer-text2 a {
+  color: white;
 }
 @media screen and (min-width: 1200px) {
   footer div .footer-resp {
@@ -507,6 +509,22 @@ footer img {
     margin-right: auto;
   }
 }
+.menu .flex-menu-card:nth-child(1) {
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+.menu .flex-menu-card:nth-child(2) {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+.menu .flex-menu-card:nth-child(3) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.menu .flex-menu-card:nth-child(4) {
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
 .menu .title-menu {
   font-family: "Shrikhand";
   font-style: italic;
@@ -656,6 +674,7 @@ footer img {
           box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   border-radius: 15.0431px;
   margin-bottom: 12px;
+  overflow: hidden;
 }
 @media screen and (min-width: 1200px) {
   .flex-menu-card .menu-card {
@@ -663,6 +682,7 @@ footer img {
   }
 }
 .flex-menu-card .menu-card .name-flex {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -678,12 +698,20 @@ footer img {
           align-items: flex-start;
   gap: 6px;
   padding-left: 15px;
+  overflow: hidden;
 }
 .flex-menu-card .menu-card .name-flex .plate-name {
   font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 .flex-menu-card .menu-card .name-flex .plate-description {
   font-size: 15.0431px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
 }
 .flex-menu-card .menu-card .price {
   position: absolute;
@@ -691,6 +719,108 @@ footer img {
   bottom: 15px;
   font-weight: 700;
   font-size: 15.0431px;
+  -webkit-transition: right 0.25s cubic-bezier(0.06, 0.47, 1, 1);
+  transition: right 0.25s cubic-bezier(0.06, 0.47, 1, 1);
+}
+
+.menu-card .icon-check {
+  position: absolute;
+  right: 12px;
+  top: 14px;
+  border-radius: 0px 10px 10px 0px;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+  padding: 12px 9.5px 11.5px;
+  display: none;
+  color: white;
+  background: #99E2D0;
+}
+
+.menu-card:hover .icon-check {
+  display: inline-block;
+  width: auto;
+  -webkit-animation: fadeinfromright 0.25s linear;
+          animation: fadeinfromright 0.25s linear;
+  -webkit-transform: scale(1.7);
+          transform: scale(1.7);
+}
+
+.menu-card:hover .price {
+  right: 65px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.menu-card:hover .name-flex {
+  -webkit-transition: margin-right 0.5s ease;
+  transition: margin-right 0.5s ease;
+  margin-right: 100px;
+}
+
+@-webkit-keyframes fadeinfromright {
+  0% {
+    -webkit-transform: translateX(100%) scale(1.7);
+            transform: translateX(100%) scale(1.7);
+  }
+  100% {
+    -webkit-transform: translateX(0%) scale(1.7);
+            transform: translateX(0%) scale(1.7);
+  }
+}
+
+@keyframes fadeinfromright {
+  0% {
+    -webkit-transform: translateX(100%) scale(1.7);
+            transform: translateX(100%) scale(1.7);
+  }
+  100% {
+    -webkit-transform: translateX(0%) scale(1.7);
+            transform: translateX(0%) scale(1.7);
+  }
+}
+.html-p {
+  height: auto;
+}
+.html-p body {
+  width: 100%;
+  height: auto;
+}
+.html-p body main {
+  position: relative;
+  height: 1352px;
+}
+@media screen and (min-width: 1200px) {
+  .html-p body main {
+    background-color: white;
+    height: 1477px;
+  }
+}
+.html-p body .footer-palette {
+  width: 100%;
+  margin-top: auto;
+}
+
+.html-p2 {
+  height: auto;
+}
+.html-p2 body {
+  width: 100%;
+  height: auto;
+}
+.html-p2 body main {
+  position: relative;
+  height: 1433px;
+}
+@media screen and (min-width: 1200px) {
+  .html-p2 body main {
+    background-color: white;
+    height: 1558px;
+  }
+}
+.html-p2 body .footer-palette {
+  width: 100%;
+  margin-top: auto;
 }
 
 html {
@@ -845,48 +975,4 @@ html body .restaurants .flex-order {
     padding-left: 30px;
     padding-right: 30px;
   }
-}
-
-.html-p {
-  height: auto;
-}
-.html-p body {
-  width: 100%;
-  height: auto;
-}
-.html-p body main {
-  position: relative;
-  height: 1352px;
-}
-@media screen and (min-width: 1200px) {
-  .html-p body main {
-    background-color: white;
-    height: 1477px;
-  }
-}
-.html-p body .footer-palette {
-  width: 100%;
-  margin-top: auto;
-}
-
-.html-p2 {
-  height: auto;
-}
-.html-p2 body {
-  width: 100%;
-  height: auto;
-}
-.html-p2 body main {
-  position: relative;
-  height: 1433px;
-}
-@media screen and (min-width: 1200px) {
-  .html-p2 body main {
-    background-color: white;
-    height: 1558px;
-  }
-}
-.html-p2 body .footer-palette {
-  width: 100%;
-  margin-top: auto;
 }

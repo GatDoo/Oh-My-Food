@@ -10,6 +10,10 @@
     color: white;
     background: #99E2D0;
   }
+
+  .name-flex {
+    transition: margin-right 0.5s ease;
+  }
 }
 
 .menu-card:hover .icon-check {
@@ -27,8 +31,8 @@
 }
 
 .menu-card:hover .name-flex {
-  transition: margin-right 0.5s ease;
   margin-right: 100px;
+  transition: margin-right 0.5s ease;
 }
 
 @keyframes fadeinfromright {

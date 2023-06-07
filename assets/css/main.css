@@ -735,6 +735,10 @@ footer img {
   color: white;
   background: #99E2D0;
 }
+.menu-card .name-flex {
+  -webkit-transition: margin-right 0.5s ease;
+  transition: margin-right 0.5s ease;
+}
 
 .menu-card:hover .icon-check {
   display: inline-block;
@@ -753,9 +757,9 @@ footer img {
 }
 
 .menu-card:hover .name-flex {
+  margin-right: 100px;
   -webkit-transition: margin-right 0.5s ease;
   transition: margin-right 0.5s ease;
-  margin-right: 100px;
 }
 
 @-webkit-keyframes fadeinfromright {

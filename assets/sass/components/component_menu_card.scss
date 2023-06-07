@@ -1,7 +1,8 @@
-.flex-menu-card {
+.flex-menu-card1, .flex-menu-card2, .flex-menu-card3 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  opacity: 0;
 
   .menu-card {
     position: relative;
@@ -56,5 +57,31 @@
       font-size: 15.0431px;
       transition: right 0.25s cubic-bezier(0.06, 0.47, 1, 1);
     }
+  }
+}
+
+.flex-menu-card1 {
+  animation: fadein 0.5s forwards;
+  animation-delay: 0s;
+}
+
+.flex-menu-card2 {
+  animation: fadein 0.5s forwards;
+  animation-delay: 0.5s;
+}
+
+.flex-menu-card3 {
+  animation: fadein 0.5s forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: translateY(20px); /* Ajoutez cette ligne pour l'animation de déplacement vertical */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0); /* Ajoutez cette ligne pour l'animation de déplacement vertical */
   }
 }

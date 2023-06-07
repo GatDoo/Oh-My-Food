@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -509,22 +510,6 @@ footer img {
     margin-right: auto;
   }
 }
-.menu .flex-menu-card:nth-child(1) {
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
-}
-.menu .flex-menu-card:nth-child(2) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-.menu .flex-menu-card:nth-child(3) {
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
-}
-.menu .flex-menu-card:nth-child(4) {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
 .menu .title-menu {
   font-family: "Shrikhand";
   font-style: italic;
@@ -643,7 +628,7 @@ footer img {
           filter: brightness(130%);
 }
 
-.flex-menu-card {
+.flex-menu-card1, .flex-menu-card2, .flex-menu-card3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -654,8 +639,9 @@ footer img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 0;
 }
-.flex-menu-card .menu-card {
+.flex-menu-card1 .menu-card, .flex-menu-card2 .menu-card, .flex-menu-card3 .menu-card {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -678,11 +664,11 @@ footer img {
   cursor: pointer;
 }
 @media screen and (min-width: 1200px) {
-  .flex-menu-card .menu-card {
+  .flex-menu-card1 .menu-card, .flex-menu-card2 .menu-card, .flex-menu-card3 .menu-card {
     width: 60%;
   }
 }
-.flex-menu-card .menu-card .name-flex {
+.flex-menu-card1 .menu-card .name-flex, .flex-menu-card2 .menu-card .name-flex, .flex-menu-card3 .menu-card .name-flex {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -702,20 +688,20 @@ footer img {
   overflow: hidden;
   margin-right: 20px;
 }
-.flex-menu-card .menu-card .name-flex .plate-name {
+.flex-menu-card1 .menu-card .name-flex .plate-name, .flex-menu-card2 .menu-card .name-flex .plate-name, .flex-menu-card3 .menu-card .name-flex .plate-name {
   font-weight: bold;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
 }
-.flex-menu-card .menu-card .name-flex .plate-description {
+.flex-menu-card1 .menu-card .name-flex .plate-description, .flex-menu-card2 .menu-card .name-flex .plate-description, .flex-menu-card3 .menu-card .name-flex .plate-description {
   font-size: 15.0431px;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
   width: 100%;
 }
-.flex-menu-card .menu-card .price {
+.flex-menu-card1 .menu-card .price, .flex-menu-card2 .menu-card .price, .flex-menu-card3 .menu-card .price {
   position: absolute;
   right: 16px;
   bottom: 15px;
@@ -725,6 +711,52 @@ footer img {
   transition: right 0.25s cubic-bezier(0.06, 0.47, 1, 1);
 }
 
+.flex-menu-card1 {
+  -webkit-animation: fadein 0.5s forwards;
+          animation: fadein 0.5s forwards;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.flex-menu-card2 {
+  -webkit-animation: fadein 0.5s forwards;
+          animation: fadein 0.5s forwards;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+}
+
+.flex-menu-card3 {
+  -webkit-animation: fadein 0.5s forwards;
+          animation: fadein 0.5s forwards;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
+
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); /* Ajoutez cette ligne pour l'animation de déplacement vertical */
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); /* Ajoutez cette ligne pour l'animation de déplacement vertical */
+  }
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px); /* Ajoutez cette ligne pour l'animation de déplacement vertical */
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0); /* Ajoutez cette ligne pour l'animation de déplacement vertical */
+  }
+}
 .menu-card .icon-check {
   position: absolute;
   right: 12px;
@@ -767,6 +799,7 @@ footer img {
   width: 100%;
   height: 100%;
   cursor: pointer;
+  z-index: 3;
 }
 
 .menu-card:hover .icon-check {
@@ -1264,7 +1297,6 @@ html body main .loader .point:nth-child(3) {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    text-shadow: 0 0 7px linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   }
   60% {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -1272,7 +1304,6 @@ html body main .loader .point:nth-child(3) {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    text-shadow: none;
   }
   100% {
     background: gray;
@@ -1280,7 +1311,6 @@ html body main .loader .point:nth-child(3) {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    text-shadow: 0 0 7px linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   }
 }
 @keyframes loader-point {
@@ -1290,7 +1320,6 @@ html body main .loader .point:nth-child(3) {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    text-shadow: 0 0 7px linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   }
   60% {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
@@ -1298,7 +1327,6 @@ html body main .loader .point:nth-child(3) {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    text-shadow: none;
   }
   100% {
     background: gray;
@@ -1306,7 +1334,6 @@ html body main .loader .point:nth-child(3) {
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
-    text-shadow: 0 0 7px linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
   }
 }
 @-webkit-keyframes loader-out {

@@ -21,7 +21,7 @@ html {
                 justify-content: center;
                 gap: 120px;
                 animation-name: loader-out;
-                animation-duration: 4s;
+                animation-duration: 3s;
                 animation-fill-mode: forwards;
 
                 .point {
@@ -57,7 +57,7 @@ html {
                 -moz-text-fill-color: transparent;
             }
 
-            60% {
+            50% {
                 background: linear-gradient(193.33deg, $purple -11.44%, $pink 123.93%);
                 -webkit-background-clip: text;
                 -webkit-text-fill-color: transparent;

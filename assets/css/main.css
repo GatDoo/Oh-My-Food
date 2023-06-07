@@ -1262,8 +1262,8 @@ html body main .loader {
   gap: 120px;
   -webkit-animation-name: loader-out;
           animation-name: loader-out;
-  -webkit-animation-duration: 4s;
-          animation-duration: 4s;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
@@ -1298,7 +1298,7 @@ html body main .loader .point:nth-child(3) {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
   }
-  60% {
+  50% {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1321,7 +1321,7 @@ html body main .loader .point:nth-child(3) {
     -moz-background-clip: text;
     -moz-text-fill-color: transparent;
   }
-  60% {
+  50% {
     background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;

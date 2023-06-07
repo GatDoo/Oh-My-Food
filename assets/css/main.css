@@ -700,6 +700,7 @@ footer img {
   gap: 6px;
   padding-left: 15px;
   overflow: hidden;
+  margin-right: 20px;
 }
 .flex-menu-card .menu-card .name-flex .plate-name {
   font-weight: bold;
@@ -1204,6 +1205,141 @@ html body {
 html body main {
   height: auto;
   background-color: #F7F7F7;
+}
+html body main .loader {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+  z-index: 3;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 120px;
+  -webkit-animation-name: loader-out;
+          animation-name: loader-out;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+html body main .loader .point {
+  -webkit-animation: loader-point 1.2s linear infinite;
+          animation: loader-point 1.2s linear infinite;
+  -webkit-transform: scale(6);
+          transform: scale(6);
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+html body main .loader .point:nth-child(1) {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+}
+html body main .loader .point:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+          animation-delay: 0.2s;
+}
+html body main .loader .point:nth-child(3) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+@-webkit-keyframes loader-point {
+  0% {
+    background: gray;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-shadow: 0 0 7px linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  }
+  60% {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-shadow: none;
+  }
+  100% {
+    background: gray;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-shadow: 0 0 7px linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  }
+}
+@keyframes loader-point {
+  0% {
+    background: gray;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-shadow: 0 0 7px linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  }
+  60% {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-shadow: none;
+  }
+  100% {
+    background: gray;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    text-shadow: 0 0 7px linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  }
+}
+@-webkit-keyframes loader-out {
+  0% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  99% {
+    z-index: 4;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -2;
+  }
+}
+@keyframes loader-out {
+  0% {
+    opacity: 0.8;
+  }
+  80% {
+    opacity: 0.8;
+  }
+  99% {
+    z-index: 4;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    z-index: -2;
+  }
 }
 html body .flex {
   display: -webkit-box;
